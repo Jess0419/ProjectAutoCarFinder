@@ -1,5 +1,5 @@
 #Vehicle Finder
-allowedVehicleList = ["Ford F-150", "Chevorlet Silverado", "Telsa Cybertruck", "Toyota Tundra", "Nissan Titan"]
+allowedVehicleList = ["Ford F-150", "Chevrolet Silverado", "Telsa Cybertruck", "Toyota Tundra", "Nissan Titan"]
 
 #Menu
 print("===============================")
