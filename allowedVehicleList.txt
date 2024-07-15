@@ -1,7 +1,6 @@
 Ford F-150
 Chevrolet Silverado
-Telsa Cybertruck
+Tesla Cybertruck
 Toyota Tundra
-Nissan Titan
 Rivian R1T
 Ram 1500

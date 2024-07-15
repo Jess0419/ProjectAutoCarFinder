@@ -2,13 +2,14 @@
 
 #Menu
 print("===============================")
-print("AutoCountry Vehicle Finder v0.3")
+print("AutoCountry Vehicle Finder v0.4")
 print("===============================")
 print("Please enter the following number below from the following menu: ")
 print("1. PRINT all Authorized Vehicles")
 print("2. SEARCH for Authorized Vehicle")
 print("3. ADD Authorized Vehicle")
-print("4. Exit")
+print("4. DELETE Authorized Vehicle")
+print("5. Exit")
 
 ##############
 menu = int(input(""))
@@ -38,6 +39,18 @@ if menu == 3:
     print("You have added " + str(newCar) + " as an authorized vehicle")
 
 if menu == 4:
+  deleteCar = input("Please Enter the full Vehicle name you would like to REMOVE: ")
+  assurance = input("Are you sure you want to remove " + str(deleteCar) + " from the Authorized Vehicle List? ")
+  if assurance == "yes":
+    with open("allowedVehicleList.txt", "r") as file:
+      lines = file.readlines()
+    with open("allowedVehicleList.txt", "w") as file:
+      for line in lines:
+        if line.strip("\n") != deleteCar:
+          file.write(line)
+    print("You have REMOVED " + str(deleteCar) + " as an authorized vehicle")
+
+if menu == 5:
   print("Thank you for using the AutoCountry Vehicle Finder, good-bye!")
   
 
